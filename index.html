@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Numerology Phone number Tester</title>
+</head>
+<body>
+    <form>
+        <div id="form-container">
+            <div id="pname">
+                <label for="fname">Enter your Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Person Name">
+            </div>
+            <div id="pnumber">
+                <label for="phone">Enter a phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+            </div>
+            <div id="dob">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+    <div id="predictionarea" style="margin-top: 20px;"></div>
+</body>
+</html>
