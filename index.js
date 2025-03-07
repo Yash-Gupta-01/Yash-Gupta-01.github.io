@@ -68,12 +68,20 @@ function showPredictions(phoneNumber) {
 
   for (let i = 0; i < phoneNumber.length - 1; i++) {
     const pair = phoneNumber.substring(i, i + 2); // Get the pair of digits
-    const predictionText = data[pair] ? `Prediction for ${pair}: ${data[pair]}` : `No prediction found for ${pair}`;
+    const predictionText = data[pair] ? `Prediction for ${pair}: ${data[pair]}` : `Neutral for ${pair}`;
     
     const predictionElement = document.createElement('p'); // Create a new paragraph element
     predictionElement.textContent = predictionText; // Set the text content
     predictionArea.appendChild(predictionElement); // Append to the prediction area
   }
+
+  // Calculate the sum of the digits in the phone number
+  const sum = phoneNumber.split('').reduce((acc, digit) => acc + parseInt(digit), 0);
+  const sumPredictionText = data[sum] ? `Prediction for Total sum ${sum}: ${data[sum]}` : `No prediction found for Total sum ${sum}`;
+  
+  const sumPredictionElement = document.createElement('p'); // Create a new paragraph element for the sum prediction
+  sumPredictionElement.textContent = sumPredictionText; // Set the text content
+  predictionArea.appendChild(sumPredictionElement); // Append to the prediction area
 }
 
 
