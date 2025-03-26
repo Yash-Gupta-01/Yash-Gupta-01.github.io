@@ -1,7 +1,9 @@
 const data = {
   "11": 'Good family support',
   "12": 'Saving person, helpful life partner, glowing face',
-  "14": 'Bad compound',
+  "13": 'Highly knowledgeable, powerful speech, popular',
+  "14": 'Government related issue, loan, debt, health issues',
+  "15": 'Good brain, benefit from father side, famous father recognition',
   "16": 'Married life issues, spouse health issues, unsatisfied income',
   "17": 'Government job, solid contact from highly placed people',
   "18": 'Father health issues, government job issues, bad relation with father',
@@ -9,11 +11,13 @@ const data = {
   "21": 'Saving person, helpful life partner, glowing face',
   "22": 'Emotional weak, sleeping issues',
   "23": 'More enemies, stay away from children',
+  "24": 'Patience to achieve something, destructive thinking',
   "25": 'Successful, self property, Sleeping issues, multiple source of income',
   "26": 'Neutral',
   "27": 'Urine related problem, Joint pain, Leg shivering',
   "28": 'Depression, highly caring',
   "29": 'Person has a decent amount of money, lives happily on money of someone else, native might become egoistic',
+  "31": 'Highly knowledgeable, powerful speech, popular',
   "32": 'More enemies, stay away from children',
   "33": 'Knowledgeable, growth, liver-related problem',
   "34": 'Good Spouse Support',
@@ -21,12 +25,15 @@ const data = {
   "37": 'Complete personality, person would be able to take benefit from knowledge',
   "39": 'More effort, less money',
   "41": 'Government related issue, loan, debt, health issues',
+  "42": 'Patience to achieve something, destructive thinking',
   "43": 'Good Spouse Support',
   "44": 'Court Case Involved',
   "45": 'Hospital rounds',
   "46": 'Multiple affairs, skin issues, bad compound',
   "47": 'Honest, brilliant',
+  "48": 'Incurable problem, deficiency of sexual pleasure, blood disease',
   "49": 'Do risky work, uniform work, criminal mind',
+  "51": 'Good brain, benefit from father side, famous father recognition',
   "52": 'Successful, self property, Sleeping issues, multiple source of income',
   "54": 'Hospital rounds',
   "56": 'Hurry to ask for money, business mind, temple or superstore near house as a landmark',
@@ -39,19 +46,22 @@ const data = {
   "64": 'Multiple affairs, skin issues, bad compound',
   "65": 'Hurry to ask for money, business mind, temple or superstore near house as a landmark',
   "67": 'Chance of love marriage, issue in spouse health, chance of disturbed married life',
+  "68": 'Eye issues, knee pain, disease in any body organ',
   "69": 'Good management skills, good planner, opposite sex involvement',
   "71": 'Government job, solid contact from highly placed people',
   "72": 'Urine related problem, Joint pain, Leg shivering',
   "73": 'Complete personality, person would be able to take benefit from knowledge',
   "74": 'Honest, brilliant',
+  "75": 'Speaker, writer, public relation, good expressive person, lots of people come to them for advice, good consultant',
   "76": 'Chance of love marriage, issue in spouse health, chance of disturbed married life',
   "78": 'Healer, sad, idealistic, solves any problem by own power',
   "79": 'Success after separation from father, good for occult',
   "81": 'Father health issues, government job issues, bad relation with father',
   "82": 'Depression, highly caring',
   "84": 'Incurable problem, deficiency of sexual pleasure, blood disease',
-  "85": 'Neutral',
+  "85": 'Money stuck, calculator mind, person doing work related to money/finance',
   "86": 'Eye issues, knee pain, disease in any body organ',
+  "87": 'Healer, sad, idealistic, solves any problem by own power',
   "88": 'Court Case Involved',
   "89": 'Argumentative, works with principles, person might get chronic health issues in later part of life',
   "91": 'Freedom lover, don\'t like restrictions',
@@ -62,8 +72,6 @@ const data = {
   "96": 'Good management skills, good planner, opposite sex involvement',
   "97": 'Success after separation from father, good for occult',
   "98": 'Argumentative, works with principles, person might get chronic health issues in later part of life',
-  "42": 'Patience to achieve something, destructive thinking',
-  "24": 'Patience to achieve something, destructive thinking'
 };
 
 const nameInput = document.getElementById('fname');
@@ -100,6 +108,3 @@ function showPredictions(phoneNumber) {
   const sumPredictionElement = document.createElement('p'); // Create a new paragraph element for the sum prediction
   sumPredictionElement.textContent = sumPredictionText; // Set the text content
   predictionArea.appendChild(sumPredictionElement); // Append to the prediction area
-}
-
-
