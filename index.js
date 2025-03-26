@@ -108,3 +108,4 @@ function showPredictions(phoneNumber) {
   const sumPredictionElement = document.createElement('p'); // Create a new paragraph element for the sum prediction
   sumPredictionElement.textContent = sumPredictionText; // Set the text content
   predictionArea.appendChild(sumPredictionElement); // Append to the prediction area
+}
