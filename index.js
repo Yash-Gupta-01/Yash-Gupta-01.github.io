@@ -109,3 +109,5 @@ function showPredictions(phoneNumber) {
   sumPredictionElement.textContent = sumPredictionText; // Set the text content
   predictionArea.appendChild(sumPredictionElement); // Append to the prediction area
 }
+
+//New code push to handle dependency issue
