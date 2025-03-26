@@ -110,4 +110,5 @@ function showPredictions(phoneNumber) {
   predictionArea.appendChild(sumPredictionElement); // Append to the prediction area
 }
 
+
 //New code push to handle dependency issue
